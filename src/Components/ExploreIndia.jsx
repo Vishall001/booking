@@ -42,6 +42,7 @@ export const ExploreIndia = () => {
             width={"50%"}
             height={"260px"}
             backgroundRepeat={"no-repeat"}
+            background-size= {"cover"}
             backgroundImage="url(https://cf.bstatic.com/xdata/images/city/540x270/684764.webp?k=6c3c9e920a39ca4f9eddcdfaa916999ea5d2765844610dd59349f4271f7596b3&amp;o=)"
           >
             <Box display={"flex"} marginTop={"10px"}>
@@ -87,6 +88,7 @@ export const ExploreIndia = () => {
             display={"flex"}
             width={"33%"}
             height={"260px"}
+            background-position={"center"}
             backgroundRepeat={"no-repeat"}
             backgroundImage="url(https://cf.bstatic.com/xdata/images/city/540x270/684655.webp?k=2afb45c7a46dedbc5b5b360599dbbb7a7165ac823b22dd66d7602ea4c49de1c4&amp;o=)"
           >
