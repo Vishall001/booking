@@ -152,7 +152,7 @@ export const ExploreIndia = () => {
         </Box>
       </Box>
       {/* Explore India Slider */}
-      <Box textAlign={"start"} width={"60%"} margin={"auto"}>
+      <Box textAlign={"start"} width={"60%"} margin={"auto"} marginBottom={"100px"}>
         <Text fontWeight={"bold"}>Explore India</Text>
         <Text>These popular destinations have a lot to offer</Text>
         <Slideshow/>
