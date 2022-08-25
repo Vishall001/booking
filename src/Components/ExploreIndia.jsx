@@ -42,12 +42,17 @@ export const ExploreIndia = () => {
             width={"50%"}
             height={"260px"}
             backgroundRepeat={"no-repeat"}
-            background-size= {"cover"}
+            background-size={"cover"}
             backgroundImage="url(https://cf.bstatic.com/xdata/images/city/540x270/684764.webp?k=6c3c9e920a39ca4f9eddcdfaa916999ea5d2765844610dd59349f4271f7596b3&amp;o=)"
           >
             <Box display={"flex"} marginTop={"10px"}>
               {" "}
-              <Text   marginLeft={"12px"} color={"white"} fontSize={["18px", "20px", "25px", "28px"]} fontWeight={"bold"}>
+              <Text
+                marginLeft={"12px"}
+                color={"white"}
+                fontSize={["18px", "20px", "25px", "28px"]}
+                fontWeight={"bold"}
+              >
                 New Delhi
               </Text>
               <Image
@@ -67,10 +72,15 @@ export const ExploreIndia = () => {
             backgroundRepeat={"no-repeat"}
             backgroundImage="url(https://cf.bstatic.com/xdata/images/city/540x270/684499.webp?k=05c9fc4396edfc04f1e0f3d00ffbe182ebd969c9d83857a8e10a4e046fae21cd&amp;o=)"
           >
-             <Box display={"flex"} marginTop={"10px"}>
+            <Box display={"flex"} marginTop={"10px"}>
               {" "}
-              <Text   marginLeft={"12px"} color={"white"} fontSize={["18px", "20px", "25px", "28px"]} fontWeight={"bold"}>
-               Agra
+              <Text
+                marginLeft={"12px"}
+                color={"white"}
+                fontSize={["18px", "20px", "25px", "28px"]}
+                fontWeight={"bold"}
+              >
+                Agra
               </Text>
               <Image
                 height={"25px"}
@@ -92,10 +102,15 @@ export const ExploreIndia = () => {
             backgroundRepeat={"no-repeat"}
             backgroundImage="url(https://cf.bstatic.com/xdata/images/city/540x270/684655.webp?k=2afb45c7a46dedbc5b5b360599dbbb7a7165ac823b22dd66d7602ea4c49de1c4&amp;o=)"
           >
-             <Box display={"flex"} marginTop={"10px"}>
+            <Box display={"flex"} marginTop={"10px"}>
               {" "}
-              <Text   marginLeft={"12px"} color={"white"} fontSize={["18px", "20px", "25px", "28px"]} fontWeight={"bold"}>
-               Agra
+              <Text
+                marginLeft={"12px"}
+                color={"white"}
+                fontSize={["18px", "20px", "25px", "28px"]}
+                fontWeight={"bold"}
+              >
+                Agra
               </Text>
               <Image
                 height={"25px"}
@@ -114,9 +129,14 @@ export const ExploreIndia = () => {
             backgroundRepeat={"no-repeat"}
             backgroundImage="url(https://cf.bstatic.com/xdata/images/city/540x270/684939.webp?k=125d0a8cab106ebfe2b99eafa9ea548ab13b5846a4034bbe35387accfbd94240&amp;o=)"
           >
-             <Box display={"flex"} marginTop={"10px"}>
+            <Box display={"flex"} marginTop={"10px"}>
               {" "}
-              <Text   marginLeft={"12px"} color={"white"} fontSize={["18px", "20px", "25px", "28px"]} fontWeight={"bold"}>
+              <Text
+                marginLeft={"12px"}
+                color={"white"}
+                fontSize={["18px", "20px", "25px", "28px"]}
+                fontWeight={"bold"}
+              >
                 Varanasi
               </Text>
               <Image
@@ -136,10 +156,15 @@ export const ExploreIndia = () => {
             backgroundRepeat={"no-repeat"}
             backgroundImage="url(https://cf.bstatic.com/xdata/images/city/540x270/971345.webp?k=9bf85dfa10a224e2855ca2f8ca3fcd96916a962d87cdfcc48d6d57c09bef3c65&amp;o=)"
           >
-             <Box display={"flex"} marginTop={"10px"}>
+            <Box display={"flex"} marginTop={"10px"}>
               {" "}
-              <Text   marginLeft={"12px"} color={"white"} fontSize={["18px", "20px", "25px", "28px"]} fontWeight={"bold"}>
-              Mumbai
+              <Text
+                marginLeft={"12px"}
+                color={"white"}
+                fontSize={["18px", "20px", "25px", "28px"]}
+                fontWeight={"bold"}
+              >
+                Mumbai
               </Text>
               <Image
                 height={"25px"}
@@ -154,10 +179,15 @@ export const ExploreIndia = () => {
         </Box>
       </Box>
       {/* Explore India Slider */}
-      <Box textAlign={"start"} width={"60%"} margin={"auto"} marginBottom={"100px"}>
+      <Box
+        textAlign={"start"}
+        width={"60%"}
+        margin={"auto"}
+        marginBottom={"100px"}
+      >
         <Text fontWeight={"bold"}>Explore India</Text>
         <Text>These popular destinations have a lot to offer</Text>
-        <Slideshow/>
+        <Slideshow />
       </Box>
     </>
   );
