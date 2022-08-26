@@ -3,16 +3,27 @@ import {
   Input,
   InputGroup,
   InputLeftElement,
-  Select,
+  Flex,
   Text,
-  Button
+  Button,
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverFooter,
+  PopoverArrow,
+  PopoverCloseButton,
+  PopoverAnchor,
+  Portal,
 } from "@chakra-ui/react";
-import { PhoneIcon } from "@chakra-ui/icons";
+import { PhoneIcon, SearchIcon } from "@chakra-ui/icons";
+import { useState } from "react";
 export const Search = () => {
   return (
     <>
       <Box width={"100%"} backgroundColor={"blue"} height={"200px"}>
-        <Box width={"60%"} margin={"auto"} >
+        <Box width={"60%"} margin={"auto"}>
           <Text
             color={"white"}
             fontSize={["22px", "25px", "28px", "40px"]}
@@ -30,7 +41,6 @@ export const Search = () => {
         </Box>
       </Box>
       <Box
-     
         display={"flex"}
         width={"60%"}
         margin={"auto"}
@@ -41,11 +51,11 @@ export const Search = () => {
         <InputGroup>
           <InputLeftElement
             pointerEvents="none"
-            children={<PhoneIcon color="gray.300" />}
+            children={<SearchIcon marginTop={"5px"} color={"gray.400"} />}
           />
           <Input
             type="tel"
-            placeholder="Where are yu going?"
+            placeholder="Where are you going?"
             borderColor={"yellow"}
             border={"3px solid yellow"}
             height={"auto"}
@@ -63,7 +73,8 @@ export const Search = () => {
             height={"auto"}
           />{" "}
           <Input
-           borderColor={"yellow"} border={"3px solid yellow"}
+            borderColor={"yellow"}
+            border={"3px solid yellow"}
             borderLeft={"none"}
             placeholder="Check-Out"
             size="md"
@@ -71,15 +82,126 @@ export const Search = () => {
             height={"auto"}
           />
         </Box>
-        <Select placeholder="2 adults . 0 children . 1 room"  borderColor={"yellow"} border={"3px solid yellow"}  borderRadius={"10%"} height={"47px"}>
-          <option value="option1">3 adults . 2 children . 2 room</option>
-          <option value="option2">2 adults . 4 children . 3 room</option>
-          <option value="option3">1 adults . 2 children . 1 room</option>
-        </Select>
-        <Button paddingTop={"20px"}  paddingBottom={"20px"} paddingLeft={"50px"} paddingRight={"50px"} colorScheme="blue"  borderColor={"yellow"} border={"3px solid yellow"}>
-           Search
-          </Button>
+        {/*  */}
+        <Pop />
+        <Button
+          paddingTop={"20px"}
+          paddingBottom={"20px"}
+          paddingLeft={"50px"}
+          paddingRight={"50px"}
+          colorScheme="blue"
+          borderColor={"yellow"}
+          border={"3px solid yellow"}
+        >
+          Search
+        </Button>
       </Box>
     </>
   );
 };
+
+function Pop() {
+  const [adult, setAdult] = useState(0);
+  const [children, setchildren] = useState(0);
+  const [room, setroom] = useState(0);
+  const handleIncre = () => {
+    setAdult((prev) => prev + 1);
+  };
+
+  const handledec = () => {
+    setAdult((prev) => prev - 1);
+  };
+  const handlechildrenIncre = () => {
+    setchildren((prev) => prev + 1);
+  };
+  const handlechildrenDec = () => {
+    setchildren((prev) => prev - 1);
+  };
+  const handleroomIncre = () => {
+    setroom((prev) => prev + 1);
+  };
+  const handleroomDec = () => {
+    setroom((prev) => prev - 1);
+  };
+  return (
+    <Popover>
+      <PopoverTrigger>
+        <Box
+          display={"flex"}
+          w="45%"
+          justifyContent={"space-evenly"}
+          textAlign={"center"}
+          border={"3px solid yellow"}
+        >
+          <Text margin={"4px 0 0 3px"}>{adult} adult</Text>
+          <Text marginTop={"4px"}>{children} children</Text>
+          <Text margin={"4px 5px 0 0"}>{room} rooms</Text>
+        </Box>
+      </PopoverTrigger>
+      <Portal>
+        <PopoverContent>
+          <PopoverArrow />
+          <PopoverHeader color={"white"}>Header</PopoverHeader>
+          <PopoverCloseButton />
+          <PopoverBody display={"flex"} justifyContent={"space-around"}>
+            <Text width={"40%"}>Adult</Text>
+            <Button
+              disabled={adult == 0}
+              onClick={handledec}
+              border={"1px solid blue"}
+              color={"black"}
+            >
+              -
+            </Button>
+            <Text marginTop={"5px"}>{adult}</Text>
+            <Button
+              onClick={handleIncre}
+              border={"1px solid blue"}
+              color={"black"}
+            >
+              +
+            </Button>
+          </PopoverBody>
+          <PopoverBody display={"flex"} justifyContent={"space-around"}>
+            <Text width={"40%"}>Children</Text>
+            <Button
+              disabled={children == 0}
+              onClick={handlechildrenDec}
+              border={"1px solid blue"}
+              color={"black"}
+            >
+              -
+            </Button>
+            <Text marginTop={"5px"}>{children}</Text>
+            <Button
+              onClick={handlechildrenIncre}
+              border={"1px solid blue"}
+              color={"black"}
+            >
+              +
+            </Button>
+          </PopoverBody>
+          <PopoverBody display={"flex"} justifyContent={"space-around"}>
+            <Text width={"40%"}>Room</Text>
+            <Button
+              disabled={room == 0}
+              onClick={handleroomDec}
+              border={"1px solid blue"}
+              color={"black"}
+            >
+              -
+            </Button>
+            <Text marginTop={"5px"}>{room}</Text>
+            <Button
+              onClick={handleroomIncre}
+              border={"1px solid blue"}
+              color={"black"}
+            >
+              +
+            </Button>
+          </PopoverBody>
+        </PopoverContent>
+      </Portal>
+    </Popover>
+  );
+}
