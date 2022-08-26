@@ -71,10 +71,10 @@ export const Search = () => {
             height={"auto"}
           />
         </Box>
-        <Select placeholder="Select option"  borderColor={"yellow"} border={"3px solid yellow"}  borderRadius={"10%"} height={"47px"}>
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
+        <Select placeholder="2 adults . 0 children . 1 room"  borderColor={"yellow"} border={"3px solid yellow"}  borderRadius={"10%"} height={"47px"}>
+          <option value="option1">3 adults . 2 children . 2 room</option>
+          <option value="option2">2 adults . 4 children . 3 room</option>
+          <option value="option3">1 adults . 2 children . 1 room</option>
         </Select>
         <Button paddingTop={"20px"}  paddingBottom={"20px"} paddingLeft={"50px"} paddingRight={"50px"} colorScheme="blue"  borderColor={"yellow"} border={"3px solid yellow"}>
            Search

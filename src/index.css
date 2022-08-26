@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.article-container {
+  width: 50%;
+  height: auto;
+  /* border: 1px solid #000000; */
+  overflow: hidden;
+  position: relative;
+}
+
+.article-img-holder {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  /* overflow: hidden; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition:  1s;
+}
+
+
+
+
+.caption{
+  position: absolute;
+  bottom :0;
+}
