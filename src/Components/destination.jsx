@@ -20,6 +20,7 @@ const region = [
       properties: "4,377 properties",
     },
   ],
+  
   [
     {
       country: "Bihar",
