@@ -17,9 +17,7 @@ import { Heading } from "@chakra-ui/react";
 import {
   faAlignJustify,
   faMagnifyingGlass,
-  faPlaneUp,
-
-  
+  faPlaneUp, 
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Worldwide from "../Components/Worldwide";
