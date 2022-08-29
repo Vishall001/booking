@@ -21,6 +21,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Worldwide from "../Components/Worldwide";
+
 import Faqs from "../Components/Faqs";
 import Navbar from "../Components/Navbar/Navbar";
 import FooterEveryPage from "../Components/Footer/FooterEveryPage";
