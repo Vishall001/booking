@@ -1,9 +1,9 @@
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box,Text } from "@chakra-ui/react";
 
 export const Nextrip = () => {
   return (
     <>
-      <Box width={"60%"} margin={"auto"} marginTop={"20px"}>
+      <Box width={"75%"} margin={"auto"} marginTop={"30px"}>
         <Text
           textAlign={"start"}
           fontWeight={"bold"}
@@ -24,7 +24,7 @@ export const Nextrip = () => {
             display={"flex"}
             width={"50%"}
             height={"auto"}
-            backgroundPosition={"center"}
+            backgroundPosition={"cover"}
             backgroundRepeat={"no-repeat"}
             backgroundImage='url("https://cf.bstatic.com/xdata/images/xphoto/540x405/165922442.webp?k=7620df87dcc9ef0cd2fe66423dbf11fbdc2cd17e090856d8046aa3ec60dd3764&amp;o=");'
           >

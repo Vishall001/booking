@@ -1,5 +1,4 @@
 import { LockIcon } from "@chakra-ui/icons";
-import { Image } from "@chakra-ui/react";
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -40,7 +39,7 @@ export const TravelSlide = ({ image, no }) => {
                 marginRight: "15px",
                 marginLeft:"15px",
                 boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
-                border:"1px solid rgb(217,217,217)"
+                border:"1px solid rgb(217,217,217)",
               }}
             >
               <div style={{display:"flex",justifyContent:"space-between"}}>

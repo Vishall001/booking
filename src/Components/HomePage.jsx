@@ -1,22 +1,18 @@
-import { Box } from "@chakra-ui/react";
-import { Connect } from "./connect";
-import { Destination } from "./destination";
-import { ExploreIndia } from "./ExploreIndia";
-import { Homeguest } from "./Homeguest";
-import { Nextrip } from "./nextTrip";
-import { Search } from "./Search";
+import React from 'react'
+import {Link} from "react-router-dom"
+import { CreatePassword } from './CreatePassword'
+import { Regsiter } from './Regsiter'
 
-export const HomePage = () => {
+export const Homepage = () => {
   return (
-    <>
-      <Box>
-        <Search />
-        <ExploreIndia />
-        <Homeguest />
-        <Connect />
-        <Nextrip />
-        <Destination />
-      </Box>
-    </>
-  );
-};
+    <div>
+        <h1>
+        Welcome to Home Page
+        </h1>
+        <Link className='link' to="/goa">Goa</Link>
+        <Link className='link' to="/mumbai">Mumbai</Link>
+        <Regsiter/>
+        {/* <CreatePassword/> */}
+    </div>
+  )
+}

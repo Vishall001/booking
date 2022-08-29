@@ -3,7 +3,6 @@ import {
   Input,
   InputGroup,
   InputLeftElement,
-  Flex,
   Text,
   Button,
   Popover,
@@ -11,73 +10,73 @@ import {
   PopoverContent,
   PopoverHeader,
   PopoverBody,
-  PopoverFooter,
   PopoverArrow,
   PopoverCloseButton,
-  PopoverAnchor,
   Portal,
 } from "@chakra-ui/react";
-import { PhoneIcon, SearchIcon } from "@chakra-ui/icons";
+import {  SearchIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 export const Search = () => {
   return (
     <>
-      <Box width={"100%"} backgroundColor={"blue"} height={"200px"}>
-        <Box width={"60%"} margin={"auto"}>
+      <Box width={"100%"} backgroundColor={"#003580"} height={"200px"} pt="35px">
+        <Box width={"75%"} margin={"auto"}>
           <Text
             color={"white"}
-            fontSize={["22px", "25px", "28px", "40px"]}
+            fontSize={["20px", "25px", "30px", "45px"]}
             textAlign={"start"}
+            fontWeight="bold"
           >
-            Where To Next,Guest
+            Find your next stay
           </Text>
           <Text
             color={"white"}
-            fontSize={["18px", "20px", "25px", "30px"]}
+            fontSize={["12px", "15px", "18px", "22px"]}
             textAlign={"start"}
           >
-            Find exclusive Genius rewards in every corner of the world!
+           Search low prices on hotels, homes and much more...
           </Text>
         </Box>
       </Box>
       <Box
         display={"flex"}
-        width={"60%"}
+        width={"75%"}
         margin={"auto"}
         marginTop={"-20px"}
         backgroundColor={"white"}
         height={"auto"}
+        border="4px solid #febb02"
       >
         <InputGroup>
           <InputLeftElement
             pointerEvents="none"
-            children={<SearchIcon marginTop={"5px"} color={"gray.400"} />}
+            children={<SearchIcon marginTop={"10px"} color={"gray.400"} />}
           />
           <Input
             type="tel"
             placeholder="Where are you going?"
-            borderColor={"yellow"}
-            border={"3px solid yellow"}
-            height={"auto"}
+            borderRight={"4px solid #febb02"}
+            height="50px"
+            borderRadius={"0px"}
           />
         </InputGroup>
         <Box display={"flex"}>
           <Input
-            borderColor={"yellow"}
-            border={"3px solid yellow"}
-            borderRight={"none"}
+            // borderColor={"yellow"}
+            borderRight="0"
+            borderRadius={"0px"}
             placeholder="Check-In"
-            size="md"
+            size="sm"
             type="date"
             aria-hidden={true}
             height={"auto"}
           />{" "}
           <Input
-            borderColor={"yellow"}
-            border={"3px solid yellow"}
+            borderRight={"4px solid #febb02"}
+            borderRadius={"0px"}
             borderLeft={"none"}
             placeholder="Check-Out"
-            size="md"
+            size="sm"
             type="date"
             height={"auto"}
           />
@@ -85,13 +84,13 @@ export const Search = () => {
         {/*  */}
         <Pop />
         <Button
-          paddingTop={"20px"}
-          paddingBottom={"20px"}
-          paddingLeft={"50px"}
-          paddingRight={"50px"}
+          paddingLeft={"60px"}
+          paddingRight={"60px"}
+          height={"50px"}
           colorScheme="blue"
-          borderColor={"yellow"}
-          border={"3px solid yellow"}
+          width={"100px"}
+          borderRadius="0"
+          fontWeight={"bold"}
         >
           Search
         </Button>
@@ -130,12 +129,13 @@ function Pop() {
           display={"flex"}
           w="45%"
           justifyContent={"space-evenly"}
+          alignItems="center"
           textAlign={"center"}
-          border={"3px solid yellow"}
+          borderRight={"4px solid #febb02"}
         >
-          <Text margin={"4px 0 0 3px"}>{adult} adult</Text>
-          <Text marginTop={"4px"}>{children} children</Text>
-          <Text margin={"4px 5px 0 0"}>{room} rooms</Text>
+          <Text >{adult} adult</Text>
+          <Text >{children} children</Text>
+          <Text >{room} rooms</Text>
         </Box>
       </PopoverTrigger>
       <Portal>
@@ -146,7 +146,7 @@ function Pop() {
           <PopoverBody display={"flex"} justifyContent={"space-around"}>
             <Text width={"40%"}>Adult</Text>
             <Button
-              disabled={adult == 0}
+              disabled={adult === 0}
               onClick={handledec}
               border={"1px solid blue"}
               color={"black"}
@@ -165,7 +165,7 @@ function Pop() {
           <PopoverBody display={"flex"} justifyContent={"space-around"}>
             <Text width={"40%"}>Children</Text>
             <Button
-              disabled={children == 0}
+              disabled={children === 0}
               onClick={handlechildrenDec}
               border={"1px solid blue"}
               color={"black"}
@@ -184,7 +184,7 @@ function Pop() {
           <PopoverBody display={"flex"} justifyContent={"space-around"}>
             <Text width={"40%"}>Room</Text>
             <Button
-              disabled={room == 0}
+              disabled={room === 0}
               onClick={handleroomDec}
               border={"1px solid blue"}
               color={"black"}

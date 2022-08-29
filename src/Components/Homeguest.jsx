@@ -46,7 +46,7 @@ const homes = [
 export const Homeguest = () => {
   return (
     <>
-      <Box width={"60%"} margin={"auto"}>
+      <Box width={"75%"} margin={"auto"}>
         <Text
           textAlign={"start"}
           fontWeight={"bold"}
@@ -73,7 +73,7 @@ function Homelove({ arr1 }) {
               <Text color={"gray"}>{item.comment}</Text>
               <Text fontWeight={"500"}>{item.price}</Text>
               <Box display={"flex"} >
-                <Button backgroundColor={"blue"} color={"white"}>
+                <Button backgroundColor={"#003580"} color={"white"} p="0">
                   {item.rating}
                 </Button>
                 <Text margin={"10px 0 0 10px"} fontWeight={"500"}>

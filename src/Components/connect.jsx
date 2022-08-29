@@ -4,7 +4,7 @@ import { Box, Image, Text } from "@chakra-ui/react"
 export const Connect =()=>{
     return (
         <>
-        <Box width={"60%"} margin={"auto"}>
+        <Box width={"75%"} margin={"auto"} mt="30px">
          <Box textAlign={"start"} margin={"10px 0 15px 0"}>
             <Text fontWeight={"bold"} fontSize={["12px","15px","18px","22px"]}>Connect with other travellers</Text>
          </Box>

@@ -1,12 +1,10 @@
 import { Box, Button, Image, Text } from "@chakra-ui/react";
-import { Grid, GridItem } from "@chakra-ui/react";
 import { Slideshow } from "./Slide";
 import { TravelSlide } from "./TravelSlide";
 export const ExploreIndia = () => {
   const slideImages = [
     {
       url: "https://cf.bstatic.com/xdata/images/region/square250/49646.webp?k=b7f38878b9164ee38e0b99c4d4646dbea76b7bf4add8464b1aa75e4c9d0efc6e&o=",
-
       caption: "Goa",
       property: "5,242 properties",
     },
@@ -105,7 +103,7 @@ export const ExploreIndia = () => {
     <>
       <Box
         display={"flex"}
-        width={"60%"}
+        width={"75%"}
         height={"auto"}
         margin={"auto"}
         marginTop={"30px"}
@@ -129,7 +127,7 @@ export const ExploreIndia = () => {
           </Button>
         </Box>
       </Box>
-      <Box width={"60%"} margin={"auto"} marginTop={"20px"}>
+      <Box width={"75%"} margin={"auto"} marginTop={"20px"}>
         <Box
           height={"260px"}
           width={"100%"}
@@ -284,7 +282,7 @@ export const ExploreIndia = () => {
       {/* Explore India Slider */}
       <Box
         textAlign={"start"}
-        width={"60%"}
+        width={"75%"}
         margin={"auto"}
         marginBottom={"10px"}
       >
@@ -302,7 +300,7 @@ export const ExploreIndia = () => {
       </Box>
       <Box
         textAlign={"start"}
-        width={"60%"}
+        width={"75%"}
         margin={"auto"}
         marginBottom={"20px"}
       >
@@ -317,7 +315,7 @@ export const ExploreIndia = () => {
         <Slideshow image={slide} no={4} />
       </Box>
       <Box  textAlign={"start"}
-        width={"60%"}
+        width={"75%"}
         margin={"auto"}
         marginTop={"30px"}
         marginBottom={"20px"} >
